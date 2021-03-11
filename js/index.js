@@ -56,6 +56,7 @@ addBtn.addEventListener('click', event => {
       CreateTaskNode(tasks[tasks.length-1], taskList)
       SetFilter(document.querySelector('.active'))
       AddToLocalStorage(tasks)
+      CountNew(tasks)
     }
     else {
       input.value = ''
