@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="shortcut icon" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans" rel="stylesheet">
+  <link rel="stylesheet" href="./css/index.css">
+  <title>ToDo</title>
+</head>
+<body class="light">
+  <div class="container">
+    <header class="header">
+      <h1 class="header__title">TODO</h1>
+      <span class="header__swith-icon light"></span>
+    </header>
+    <main class="main">
+      <div class="main__input-block light">
+        <span class="main__add-btn circle"></span>
+        <input class="main__input" type="text" maxlength="60" placeholder="Create a new todo..."/>
+      </div>
+      <div class="shadow-box">
+        <ul class="main__task-list light">
+        </ul>
+        <div class="main__footer light">
+          <span class="main__items-left"></span>
+          <ul class="main__filter-block">
+            <li class="main__filter-item active">All</li>
+            <li class="main__filter-item">Active</li>
+            <li class="main__filter-item">Completed</li>
+          </ul>
+          <span class="main__clear-tasks">Clear completed</span>
+        </div>
+      </div>
+    </main>
+    <footer class="footer light">
+      <span class="footer__text">Drag and drop to reorder list</span>
+    </footer>
+  </div>
+
+  <script src="./js/index.js"></script>
+</body>
+</html>
